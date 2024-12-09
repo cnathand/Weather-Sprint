@@ -1,11 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+
+    <div class="grid-bg">
+        <div class="main-grid" style="color: white;">
+            <div class="grid-current grid-white">
+                <div style="font-size: 4rem;">Fri 6</div> 
+                <div style="font-size: 4rem;">December</div>
+                <div style="font-size: 4rem;" class="d-flex flex-row justify-content-center align-items-start">
+                    <p style="font-size: 12rem; color: orchid;">65</p>
+                    <p>F|C
+                    <img style="height: 15rem; width: 15rem;" src="assets/suncloud.png" alt="">
+                </div>
+                <div style="font-size: 1.4rem;">low - 40F|C</div>
+            </div>
+            <div class="grid-day1 grid-white d-flex align-items-center flex-column" style="font-size: 2rem;">
+                SAT
+                <img style="height: auto; width: 10rem;" src="assets/cloud.png" alt="">
+                    61
+                    F|C
+            </div>
+            <div class="grid-day2 grid-white d-flex align-items-center flex-column" style="font-size: 2rem;">
+                SAT
+                <img style="height: auto; width: 10rem;"  src="assets/suncloud.png" alt="">
+                    61
+                    F|C
+            </div>
+            <div class="grid-day3 grid-white d-flex align-items-center flex-column" style="font-size: 2rem;">
+                SAT
+                <img style="height: auto; width: 10rem;"  src="assets/Partly cloudy.png" alt="">
+                    61
+                    F|C
+            </div>
+            <div class="grid-day4 grid-white d-flex align-items-center flex-column" style="font-size: 2rem;">
+                SAT
+                <img style="height: auto; width: 10rem;"  src="assets/cloud.png" alt="">
+                    61
+                    F|C
+            </div>
+            <div class="grid-day5 grid-white d-flex align-items-center flex-column" style="font-size: 2rem;">
+                    SAT
+                    <img style="height: auto; width: 10rem;"  src="assets/suncloud.png" alt="">
+                    61
+                    F|C
+            </div>
+            <div class="grid-recent" style="border: 1px white solid;">
+                <div style="border-bottom: 1px white solid; height: 4rem; font-size: 1.7rem; display: flex; justify-content: center; align-items: center;">recently visted</div>
+                <div style="margin: 3rem .6rem 0rem .6rem; font-size: 1.5rem;">- example city</div>
+            </div>
+        </div>
+    </div>    
+    <script type="module" src="scripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
