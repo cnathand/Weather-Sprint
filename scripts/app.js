@@ -7,7 +7,7 @@ const lon = -121.275604;
 async function fetchWeather1() {
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${API_KEY}`
     const response = await fetch(url);
-    const data = await response.json();
+    const data= await response.json();
 
     console.log("today");
     console.log("city: ", data.name);
@@ -26,9 +26,11 @@ async function fetchWeather() {
     const response = await fetch(url);
     const data = await response.json();
 
+    console.log(data);
 
+    console.log(data.list[0].dt*1000)
     console.log(data.list[0].dt_txt);
-    console.log("city: ", data.city.name);
+    console.log("city location: ", data.city.name, ", ", data.city.country);
     console.log(`temp: ${data.list[0].main.temp}°F`)
     console.log(`highest: ${data.list[0].main.temp_max}°F`)
     console.log(`lowest: ${data.list[0].main.temp_min}°F`)

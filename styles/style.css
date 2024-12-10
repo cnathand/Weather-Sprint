@@ -17,45 +17,102 @@ body{
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(4,1fr);
     background-color: rgba(0, 0, 0, 0.481);
-    height: 100vh;
     border: 1px solid white;
+    color: white;
 }
 
 .grid-white{
     background-color: rgba(152, 152, 152, 0.608);
     border: thin white solid;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-white img{
+    height: auto; 
+    width: 10rem;
 }
 
 .grid-current{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     grid-row: 1/4;
-    grid-column: span 5;
+    grid-column: 1 / 6;
+    font-size: 4rem;
+}
+
+
+.grid-current img{
+    height: 15rem; 
+    width: 15rem;
+    margin-left: 5rem;
+}
+
+.grid-current1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-text{
+    font-size: 12rem;
+    color: rgb(216, 163, 214);
+}
+
+.current-date{
+    margin: 4rem 0rem 0rem 4rem;
+}
+
+.current-temp{
+    display: flex;
+    align-items: end;
+    font-size: 3rem;
+    margin: 0rem 0rem 1rem 1rem;
 }
 
 .grid-day1{
     grid-row: 4/5;
     grid-column: 1/2;
+    margin-top: 3px;
 }
 
 .grid-day2{
     grid-row: 4/5;
     grid-column: 2/3;
+    margin-top: 3px;
 }
 .grid-day3{
     grid-row: 4/5;
     grid-column: 3/4;
+    margin-top: 3px;
 }
 .grid-day4{
     grid-row: 4/5;
     grid-column: 4/5;
+    margin-top: 3px;
 }
 .grid-day5{
     grid-row: 4/5;
+    margin-top: 3px;
     grid-column: 5/6;
 }
 .grid-recent{
     grid-column: 6/7;
-    grid-row: span 5;
+    grid-row: 1 / 5;
     grid-template-rows: auto 1fr ;
+    border: 1px white solid;
+}
+.recent-visit{
+    border-bottom: 1px white solid; 
+    height: 4rem; 
+    font-size: 1.7rem; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.recent-text{
+    margin: 3rem .6rem 0rem .6rem; 
+    font-size: 1.5rem;
 }
