@@ -7,9 +7,21 @@ body{
 
 }
 
+.city-input{
+    display: flex;
+    justify-content: end;
+    margin: 1rem 2rem 0rem 0rem;
+}
+.city-input input{
+    width: 20rem;
+    height: 3rem;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
 .grid-bg{
     border: .7rem solid rgba(0, 0, 0, 0.481);
-    margin: 2rem;
+    margin: .5rem 2rem 2rem 2rem;
 }
 
 .main-grid{
