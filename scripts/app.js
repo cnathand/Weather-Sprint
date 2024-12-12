@@ -7,13 +7,7 @@ const cityname = 'Stockton';
 const limit = '5';
 
 const currentTemp = document.getElementById("currentTemp");
-const day1Temp = document.getElementById("day1Temp");
-const day2Temp = document.getElementById("day2Temp");
-const day3Temp = document.getElementById("day3Temp");
-const day4Temp = document.getElementById("day4Temp");
-const day5Temp = document.getElementById("day5Temp");
 const month = document.getElementById("month");
-const day1 = document.getElementById("day1");
 const lowCurrent = document.getElementById("lowCurrent");
 
 const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -21,11 +15,15 @@ const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const date = new Date();
 month.innerText = months[date.getMonth()];
 day.innerText = `${days[date.getDay()]} ${date.getDate()}`;
-day1.innerText = `${days[date.getDay()+1]}`
-day2.innerText = `${days[date.getDay()+2]}`
-day3.innerText = `${days[date.getDay()+3]}`
-day4.innerText = `${days[date.getDay()+4]}`
-day5.innerText = `${days[date.getDay()+5]}`
+day1.innerText = `${days[(date.getDay()+1)]}`;
+day2.innerText = `${days[(date.getDay()+2) % 7]}`;
+day3.innerText = `${days[(date.getDay()+3) % 7]}`;
+day4.innerText = `${days[(date.getDay()+4) % 7]}`;
+day5.innerText = `${days[(date.getDay()+5) % 7]}`;
+
+
+
+
 
 
 async function fetchWeather1() {
@@ -43,6 +41,8 @@ async function fetchWeather1() {
 
     currentTemp.innerText = `${data.main.temp}°F`;
     lowCurrent.innerText = `Low - ${data.main.temp_min}°F`;
+    currentImage.src = `./assets/${data.weather[0].main}.png`;
+
 }
 
 
@@ -101,6 +101,11 @@ async function fetchWeather() {
     day3Temp.innerText = `${data.list[16].main.temp}°F`;
     day4Temp.innerText = `${data.list[24].main.temp}°F`;
     day5Temp.innerText = `${data.list[32].main.temp}°F`;
+    day1Image.src = `./assets/${data.list[0].weather[0].main}.png`
+    day2Image.src = `./assets/${data.list[8].weather[0].main}.png`
+    day3Image.src = `./assets/${data.list[16].weather[0].main}.png`
+    day4Image.src = `./assets/${data.list[24].weather[0].main}.png`
+    day5Image.src = `./assets/${data.list[32].weather[0].main}.png`
 }
 
 
