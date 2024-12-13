@@ -41,7 +41,7 @@ searchBtn.addEventListener('click', function(){
 });
 
 async function fetchLocation(query) {
-    const url = `http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=${limit}&appid=${API_KEY}`
+    const url = `https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=${limit}&appid=${API_KEY}`
     const response = await fetch(url);
     const data = await response.json();
 
