@@ -75,6 +75,8 @@ body{
 
 .current-date{
     margin: 4rem 0rem 0rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .current-temp{
@@ -121,7 +123,7 @@ body{
 
 }
 .grid-recent2{
-    
+
 }
 .recent-visit{
     border-bottom: 1px white solid; 
