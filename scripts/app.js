@@ -48,6 +48,9 @@ function displayFavorites() {
         removeBtn.addEventListener("click", () => {
             removeFavorite(userInput);
         });
+        listItem.addEventListener("click", () => {
+            fetchLocation(userInput);
+        });
 
         listItem.appendChild(removeBtn);
         favoritesList.appendChild(listItem);
