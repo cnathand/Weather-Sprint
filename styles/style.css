@@ -119,12 +119,7 @@ body{
     grid-template-rows: 1fr 1fr ;
     border: 1px white solid;
 }
-.grid-recent1{
 
-}
-.grid-recent2{
-
-}
 .recent-visit{
     border-bottom: 1px white solid; 
     height: 4rem; 
@@ -134,7 +129,7 @@ body{
     align-items: center;
 }
 .recent-text{
-    margin: 3rem .6rem 0rem .6rem; 
+    margin: 3rem .6rem 0rem 0rem; 
     font-size: 1.5rem;
 }
 .favorites{
@@ -147,6 +142,15 @@ body{
     align-items: center;
 }
 .favorites-saved{
-    margin: 3rem .6rem 0rem .6rem; 
+    margin: 3rem .6rem 0rem 0rem; 
     font-size: 1.5rem;   
+}
+.btn{
+    background-color: #ffffff4d; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
