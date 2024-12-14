@@ -1,4 +1,5 @@
-import { API_KEY } from "./enviroment.js";
+const API_KEY = "42fe14fb866c5a52fac4ac66bfaf815a";
+
 
 const lat = 37.961632;
 const lon = -121.275604;
