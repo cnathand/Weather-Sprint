@@ -56,9 +56,9 @@ function displayFavorites() {
 
 function removeFavorite(city) {
     let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-    favorites = favorites.filter((fav) => fav !== city); // Remove the selected city
-    localStorage.setItem("favorites", JSON.stringify(favorites)); // Save updated favorites
-    displayFavorites(); // Update the displayed favorites
+    favorites = favorites.filter((fav) => fav !== city);
+    localStorage.setItem("favorites", JSON.stringify(favorites)); 
+    displayFavorites(); 
 }
 
 function saveCity(userInput) {
